@@ -4,13 +4,13 @@ body {
     background-size: cover;
 }
 a:link {
-  color: green;
+  color: red;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: purple;
+  color: green;
   background-color: transparent;
   text-decoration: none;
 }

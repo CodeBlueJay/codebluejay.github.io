@@ -18,11 +18,11 @@ a:visited {
 a:hover {
   color: black;
   background-color: transparent;
-  font-weight: bold;
+  text-style: italic;
 }
 
 a:active {
   color: yellow;
   background-color: transparent;
-  font-weight: bold;
+  text-decoration: underline;
 }

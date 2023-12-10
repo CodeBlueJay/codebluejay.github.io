@@ -17,7 +17,6 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: transparent;
   text-decoration: none;
   background-color: yellow;
 }

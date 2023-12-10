@@ -10,7 +10,7 @@ a:link {
 }
 
 a:visited {
-  color: green;
+  color: gray;
   background-color: transparent;
   text-decoration: none;
 }
@@ -18,11 +18,11 @@ a:visited {
 a:hover {
   color: black;
   background-color: transparent;
-  text-decoration: bold;
+  text-decoration: strong;
 }
 
 a:active {
   color: yellow;
   background-color: transparent;
-  text-decoration: bold;
+  text-decoration: strong;
 }

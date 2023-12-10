@@ -1,4 +1,5 @@
 body {
     font-family: Georgia;
     background-image: url('nicebluebackground.jpg');
+    background-size: cover;
 }

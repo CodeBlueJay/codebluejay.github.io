@@ -24,3 +24,7 @@ a:active {
   color: gold;
   font-weight: bold;
 }
+
+a {
+    target: "_blank";
+}

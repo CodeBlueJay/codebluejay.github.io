@@ -24,3 +24,12 @@ a:active {
   color: gold;
   font-weight: bold;
 }
+.button {
+  background-color: #00eeff;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}

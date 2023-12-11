@@ -1,5 +1,6 @@
 body {
     font-family: Verdana;
+    background-image: url('Students.png');
     background-size: cover;
     background-position: center top;
 }

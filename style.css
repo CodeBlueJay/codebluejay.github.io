@@ -2,6 +2,7 @@ body {
     font-family: Verdana;
     background-image: url('Untitled presentation.png');
     background-size: cover;
+    background-position: center top;
 }
 a:link {
   color: red;

@@ -16,9 +16,11 @@ a:visited {
 }
 
 a:hover {
-  background-color: yellow;
+  color: yellow;
+  text-decoration: underline;
 }
 
 a:active {
-  background-color: gold;
+  color: gold;
+  font-weight: bold;
 }

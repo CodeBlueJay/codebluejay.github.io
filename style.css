@@ -33,6 +33,7 @@ a:active {
   font-size: 16px;
   border-radius: 12px;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .button:hover {

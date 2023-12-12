@@ -44,10 +44,12 @@ a:active {
 }
 
 #searchbar{ 
-     align: flex-start; 
-     padding:5px; 
-     border-radius: 10px; 
-   } 
+    position: absolute; 
+    left:20%;
+    top:25%;
+    padding:5px; 
+    border-radius: 10px; 
+} 
  
 input[type=text] { 
       width: 30%; 

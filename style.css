@@ -71,7 +71,7 @@ input[type=text] {
   }  
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #333333;
 }
 
 .topnav a {
@@ -84,7 +84,7 @@ input[type=text] {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #dddddd;
   color: black;
 }
 

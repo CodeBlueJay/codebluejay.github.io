@@ -44,7 +44,7 @@ a:active {
 }
 
 #searchbar{ 
-     margin-left: 50%; 
+     align: left; 
      padding:5px; 
      border-radius: 10px; 
    } 

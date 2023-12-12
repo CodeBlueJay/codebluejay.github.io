@@ -50,7 +50,7 @@ a:active {
 } 
  
 input[type=text] { 
-      width: 30%; 
+      width: 50px; 
       -webkit-transition: width 0.3s ease-in-out; 
       transition: width 0.3s ease-in-out; 
    } 
@@ -58,7 +58,7 @@ input[type=text] {
 /* When the input field gets focus, 
         change its width to 100% */
    input[type=text]:focus { 
-     width: 99%; 
+     width: 100%; 
    } 
  
 #list{ 

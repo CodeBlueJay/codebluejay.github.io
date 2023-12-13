@@ -1,3 +1,5 @@
+
+var subjects = ["Biology", "Etmology", "Chinese"]
 function search_list() { 
     let input = document.getElementById('searchbar').value 
     input=input.toLowerCase(); 

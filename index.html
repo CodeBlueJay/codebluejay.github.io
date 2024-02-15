@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Home Base</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('sites')">Sites</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="content-section">
+        <header>
+            <div class="container">
+                <h1>Welcome to CodeBlueJay's GitHub Home Base!</h1>
+                <p>The place to find any repository I has created.</p>
+            </div>
+        </header>
+    </section>
+
+    <section id="sites" class="content-section" style="display: none;">
+        <div class="container">
+            <h2>Sites</h2>
+            <input type="text" id="searchBar" onkeyup="searchSites()" placeholder="Search for sites...">
+            <div id="siteList">
+                <div class="repo-card">
+                    <a href="https://codebluejay.github.io/quizlet/" target="_blank">The Quizlet Site</a>
+                    <p>https://codebluejay.github.io/quizlet/</p>
+                    <p>The place of infinite Quizlet practice tests.</p>
+                </div>
+                <div class="repo-card">
+                    <a href="https://codebluejay.github.io/game-idle/" target="_blank">Game Idle</a>
+                    <p>https://codebluejay.github.io/game-idle/</p>
+                    <p>The most fire idle game I have created.</p>
+                </div>
+                <div class="repo-card">
+                    <a href="https://codebluejay.github.io/countryballs/#" target="_blank">Countryballs Database</a>
+                    <p>https://codebluejay.github.io/countryballs/#</p>
+                    <p>The place of my countryball drawings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content-section" style="display: none;">
+        <div class="container">
+            <h2>About</h2>
+            <p>I showcase my repositories here.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GitHub Home Base. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Show the 'home' section by default
+        window.onload = function() {
+            showSection('home');
+        };
+
+        function searchSites() {
+            const input = document.getElementById('searchBar').value.toLowerCase();
+            const sites = document.querySelectorAll('.repo-card');
+
+            sites.forEach(site => {
+                const title = site.querySelector('a').textContent.toLowerCase();
+                const description = site.querySelector('p').textContent.toLowerCase();
+                if (title.includes(input) || description.includes(input)) {
+                    site.style.display = 'block';
+                } else {
+                    site.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
